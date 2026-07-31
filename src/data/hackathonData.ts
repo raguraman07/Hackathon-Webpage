@@ -468,65 +468,27 @@ export const JUDGING_CRITERIA: JudgingCriterion[] = [
   }
 ];
 
-export const SPEAKERS_MENTORS: Person[] = [
-  {
-    id: "m1",
-    name: "Dr. Vikram Subramanian",
-    role: "Director of AI Research",
-    organization: "NeuroTech Labs",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
-    bio: "Ex-Google AI researcher with 14+ years in Deep Learning, Computer Vision, and Generative AI systems.",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com"
-  },
-  {
-    id: "m2",
-    name: "Ananya Deshmukh",
-    role: "Head of Product & Design",
-    organization: "FinCloud Solutions",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
-    bio: "Design leader passionate about human-centered interfaces, micro-interactions, and accessibility in FinTech.",
-    linkedin: "https://linkedin.com"
-  },
-  {
-    id: "m3",
-    name: "Karthik Raja",
-    role: "Principal Security Architect",
-    organization: "CyberShield Inc.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
-    bio: "Certified Ethical Hacker and Zero-Trust specialist advising Fortune 500 companies on cloud security.",
-    linkedin: "https://linkedin.com",
-    github: "https://github.com"
-  },
-  {
-    id: "m4",
-    name: "Priya Sundaram",
-    role: "Founder & CEO",
-    organization: "GreenTech Ventures",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
-    bio: "Serial entrepreneur mentoring early-stage CleanTech & AgriTech startups with SNS iHub.",
-    linkedin: "https://linkedin.com"
-  },
-  {
-    id: "m5",
-    name: "Rajesh Kannan",
-    role: "Staff Engineering Lead",
-    organization: "Zoho Corporation",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
-    bio: "Building distributed cloud infrastructure handling 50M+ concurrent user queries daily.",
-    linkedin: "https://linkedin.com",
-    github: "https://github.com"
-  },
-  {
-    id: "m6",
-    name: "Dr. S. Naren Kumar",
-    role: "Head of Innovation",
-    organization: "SNS iHub Incubation",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
-    bio: "Spearheading student entrepreneurship, patent filings, and seed funding ecosystems at SNS Institutions.",
-    linkedin: "https://linkedin.com"
-  }
-];
+export interface ChiefGuest {
+  name: string;
+  role: string;
+  organization: string;
+  image: string;
+  bio: string;
+  keynoteTitle?: string;
+  linkedin?: string;
+  twitter?: string;
+}
+
+export const CHIEF_GUEST: ChiefGuest = {
+  name: "Dr. Vikram Subramanian",
+  role: "Director of AI Research & Chief Innovation Strategist",
+  organization: "NeuroTech Labs",
+  image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800",
+  bio: "Ex-Google AI research director with 14+ years pioneering deep learning and generative AI architectures. Keynote speaker empowering the next generation of student engineers and founders.",
+  keynoteTitle: "Building Scalable AI for the Next Billion Users",
+  linkedin: "https://linkedin.com",
+  twitter: "https://twitter.com"
+};
 
 export const SPONSORS: Sponsor[] = [
   {

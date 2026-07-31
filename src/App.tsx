@@ -7,7 +7,7 @@ import { Schedule } from './components/Schedule';
 import { CampusNavigation } from './components/CampusNavigation';
 import { Rules } from './components/Rules';
 import { Judging } from './components/Judging';
-import { SpeakersMentors } from './components/SpeakersMentors';
+import { ChiefGuest } from './components/ChiefGuest';
 import { Sponsors } from './components/Sponsors';
 import { Organizers } from './components/Organizers';
 import { FAQ } from './components/FAQ';
@@ -37,7 +37,7 @@ export function App() {
         <CampusNavigation />
         <Rules />
         <Judging />
-        <SpeakersMentors />
+        <ChiefGuest />
         <Sponsors />
         <Organizers />
         <FAQ />

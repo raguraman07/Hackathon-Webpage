@@ -37,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
     { name: 'Schedule', href: '#schedule' },
     { name: 'Campus Map', href: '#campus-map' },
     { name: 'Rules', href: '#rules' },
-    { name: 'Mentors', href: '#speakers' },
+    { name: 'Chief Guest', href: '#chief-guest' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Venue', href: '#contact' },
   ];
