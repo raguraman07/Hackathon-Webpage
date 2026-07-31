@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
             <a href="#prizes" className="hover:text-[#FFD400] transition-colors">Prizes</a>
             <a href="#schedule" className="hover:text-[#FFD400] transition-colors">Schedule</a>
             <a href="#rules" className="hover:text-[#FFD400] transition-colors">Rules</a>
-            <a href="#speakers" className="hover:text-[#FFD400] transition-colors">Mentors</a>
+            <a href="#chief-guest" className="hover:text-[#FFD400] transition-colors">Chief Guest</a>
             <a href="#faq" className="hover:text-[#FFD400] transition-colors">FAQ</a>
             <a href="#contact" className="hover:text-[#FFD400] transition-colors">Venue</a>
           </div>
