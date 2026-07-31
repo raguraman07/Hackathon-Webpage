@@ -34,13 +34,13 @@ export function App() {
         <Timeline />
         <Prizes />
         <Schedule />
-        <CampusNavigation />
         <Rules />
         <Judging />
         <ChiefGuest />
         <Sponsors />
         <Organizers />
         <FAQ />
+        <CampusNavigation />
         <ContactVenue />
       </main>
 
