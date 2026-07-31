@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-yellow: #FFD400;
+    --color-warm-gold: #FFC107;
+    --color-deep-black: #000000;
+    --color-near-black: #0B0B0E;
+    --color-card-black: #111116;
+    --color-dark-gray: #1E1E26;
+  }
+
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-mono-custom {
+    font-family: 'Space Grotesk', monospace;
+  }
+}
+
+/* Custom Utilities */
+.text-yellow-accent {
+  color: #FFD400;
+}
+
+.bg-yellow-accent {
+  background-color: #FFD400;
+}
+
+.border-yellow-accent {
+  border-color: #FFD400;
+}
+
+.glow-yellow-sm {
+  box-shadow: 0 0 15px rgba(255, 212, 0, 0.2);
+}
+
+.glow-yellow-md {
+  box-shadow: 0 0 30px rgba(255, 212, 0, 0.35);
+}
+
+.glow-yellow-lg {
+  box-shadow: 0 0 50px rgba(255, 212, 0, 0.5);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 25px rgba(255, 212, 0, 0.4);
+  border-color: rgba(255, 212, 0, 0.7);
+}
+
+/* Grid & Mesh Backgrounds */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 212, 0, 0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-lines-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22222E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD400;
+}
