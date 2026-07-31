@@ -72,9 +72,9 @@ export const HACKATHON_DETAILS = {
   name: "COREXATHON '26",
   fullTitle: "Department of Computer Science & Engineering 24-Hour Hackathon",
   tagline: "Ignite Innovation. Conquer Code. Shape the Future.",
-  dates: "August 19 - 20, 2026",
+  dates: "August 28 - 29, 2026",
   duration: "24 Hours Non-Stop",
-  targetDate: "2026-08-19T10:00:00+05:30",
+  targetDate: "2026-08-28T10:00:00+05:30",
   venue: "SNS DT Play House",
   address: "SNS Kalvi Nagar, Sathy Main Road, Kurumbapalayam, Coimbatore, Tamil Nadu 641107",
   prizePool: "₹5,00,000+",
@@ -101,7 +101,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 2,
-    date: "August 15, 2026",
+    date: "August 25, 2026",
     time: "11:59 PM",
     title: "Registrations Close",
     description: "Deadline to register teams via official Google Form.",
@@ -111,7 +111,7 @@ export const TIMELINE: TimelineEvent[] = [
   
   {
     step: 3,
-    date: "August 19, 2026",
+    date: "August 28, 2026",
     time: "09:00 AM",
     title: "Check-in & Welcome Breakfast",
     description: "Participants arrive at SNS DT Play House, collect badge kits, and settle into hack stations.",
@@ -119,7 +119,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 4,
-    date: "August 19, 2026",
+    date: "August 28, 2026",
     time: "09:30 AM",
     title: "Inauguration & Problem Statement Release",
     description: "Keynotes by Chief Guests, sponsor briefing, and official problem statements unveiled offline at the venue.",
@@ -127,7 +127,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 5,
-    date: "August 19, 2026",
+    date: "August 28, 2026",
     time: "10:00 AM",
     title: "24-Hour Coding Sprint Begins!",
     description: "Timer starts! Teams begin coding, building, and prototyping uninterrupted.",
@@ -136,7 +136,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 6,
-    date: "August 19, 2026",
+    date: "August 28, 2026",
     time: "03:00 PM",
     title: "Mentorship Round 1",
     description: "Industry mentors review team architecture, data pipelines, and offer feedback.",
@@ -144,7 +144,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 7,
-    date: "August 19, 2026",
+    date: "August 28, 2026",
     time: "11:00 PM",
     title: "Midnight Coding",
     description: "Energy drinks, snacks, music session,and overnight coding acceleration.",
@@ -152,7 +152,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 8,
-    date: "August 20, 2026",
+    date: "August 29, 2026",
     time: "08:00 AM",
     title: "Mentorship Round 2 (Code Review)",
     description: "Technical mentors conduct deep code review and UI sanity checks.",
@@ -160,7 +160,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 9,
-    date: "August 20, 2026",
+    date: "August 29, 2026",
     time: "10:00 AM",
     title: "Sprint End & GitHub Freeze",
     description: "Codinging officially stops. Code repository URLs Should be submitted in the portal.",
@@ -168,7 +168,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 10,
-    date: "August 20, 2026",
+    date: "August 29, 2026",
     time: "10:30 AM",
     title: "Grand Jury Evaluation & Demos",
     description: "Shortlisted teams pitch live in front of the judge panel at SNS Central Auditorium.",
@@ -176,7 +176,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 11,
-    date: "August 20, 2026",
+    date: "August 29, 2026",
     time: "01:00 PM",
     title: "Prize Ceremony & Closing Valedictory",
     description: "Announcement of Grand Winner, Runner-ups, and Trophy distribution.",

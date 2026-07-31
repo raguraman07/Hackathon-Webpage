@@ -31,21 +31,21 @@ export const Schedule: React.FC = () => {
               onClick={() => setActiveDay('day1')}
               className={`px-6 py-3 rounded-xl text-sm font-extrabold uppercase tracking-wider transition-all ${
                 activeDay === 'day1'
-                  ? 'bg-[#FFD400] text-black shadow-lg shadow-[#FFD400]/20'
+                  ? 'bg-[#FFD400] text-[#000000] shadow-lg shadow-[#FFD400]/20'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
-              Day 1 — Aug 19, 2026
+              Day 1 — Aug 28, 2026
             </button>
             <button
               onClick={() => setActiveDay('day2')}
               className={`px-6 py-3 rounded-xl text-sm font-extrabold uppercase tracking-wider transition-all ${
                 activeDay === 'day2'
-                  ? 'bg-[#FFD400] text-black shadow-lg shadow-[#FFD400]/20'
+                  ? 'bg-[#FFD400] text-[#000000] shadow-lg shadow-[#FFD400]/20'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
-              Day 2 — Aug 20, 2026
+              Day 2 — Aug 29, 2026
             </button>
           </div>
         </div>
