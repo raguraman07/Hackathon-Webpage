@@ -86,7 +86,7 @@ export const HACKATHON_DETAILS = {
   department: "Department of Computer Science & Engineering",
   departmentShort: "Department of CSE",
   accreditation: "Autonomous Institution | NAAC 'A' Grade | NBA Accredited",
-  registrationUrl: "https://docs.google.com/forms/",
+  registrationUrl: "https://forms.gle/V6NBDhAanEAs3x5DA",
   googleMapsUrl: "https://maps.app.goo.gl/mLV9ieNTtxh6WZJt5",
 };
 
@@ -108,7 +108,7 @@ export const TIMELINE: TimelineEvent[] = [
     status: "current",
     highlight: true
   },
-  
+
   {
     step: 3,
     date: "August 28, 2026",
