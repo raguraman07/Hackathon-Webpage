@@ -12,9 +12,9 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-white/5">
           {/* Logo & Tagline */}
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#FFD400] text-black font-black text-xl flex items-center justify-center shadow-lg shadow-[#FFD400]/20">
-              <Terminal className="w-5 h-5 stroke-[2.5]" />
+          <div className="flex items-center gap-4">
+            <div className="h-12 px-3 py-1 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-white/10">
+              <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-10 object-contain" />
             </div>
             <div>
               <span className="font-heading font-black text-2xl text-white tracking-wider">
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
               <p className="text-xs text-[#FFD400] font-mono">
                 {HACKATHON_DETAILS.department}
               </p>
-              <p className="text-xs text-gray-500 font-mono">
+              <p className="text-xs text-gray-400 font-mono">
                 {HACKATHON_DETAILS.collegeName}
               </p>
             </div>

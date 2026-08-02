@@ -45,11 +45,11 @@ export const About: React.FC = () => {
             </div>
 
             <div className="p-8 rounded-2xl bg-[#0F0F14] border border-white/10 relative overflow-hidden group hover:border-[#FFD400]/40 transition-colors">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-2.5 rounded-xl bg-[#FFD400]/10 text-[#FFD400]">
-                  <ShieldCheck className="w-6 h-6" />
+              <div className="flex items-center gap-4 mb-4">
+                <div className="h-12 px-3 py-1 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-md">
+                  <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-9 object-contain" />
                 </div>
-                <h3 className="font-heading font-bold text-2xl text-white">Department of Computer Science & Engineering</h3>
+                <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">Department of Computer Science & Engineering</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                 Proudly conducted by the Department of Computer Science & Engineering at SNS College of Engineering (an autonomous institution with NAAC 'A' grade accreditation). We foster an ecosystem of technical excellence, research, and innovation.

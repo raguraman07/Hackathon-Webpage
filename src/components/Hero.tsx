@@ -55,8 +55,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex flex-wrap items-center justify-center gap-2.5 px-4 py-2 rounded-full bg-[#111116] border border-[#FFD400]/30 shadow-lg shadow-[#FFD400]/10 mb-8"
+          className="inline-flex flex-wrap items-center justify-center gap-3 px-5 py-2 rounded-full bg-[#111116] border border-[#FFD400]/30 shadow-xl shadow-[#FFD400]/10 mb-8"
         >
+          <div className="h-7 px-2 py-0.5 rounded-lg bg-white flex items-center justify-center">
+            <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-6 object-contain" />
+          </div>
           <span className="w-2 h-2 rounded-full bg-[#FFD400] animate-pulse" />
           <span className="text-xs font-bold uppercase tracking-widest text-[#FFD400]">
             Organized by {HACKATHON_DETAILS.department}
