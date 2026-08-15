@@ -55,17 +55,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex flex-wrap items-center justify-center gap-3 px-5 py-2 rounded-full bg-[#111116] border border-[#FFD400]/30 shadow-xl shadow-[#FFD400]/10 mb-8"
+          className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 px-3.5 sm:px-5 py-2 rounded-full bg-[#111116] border border-[#FFD400]/30 shadow-xl shadow-[#FFD400]/10 mb-6 sm:mb-8 text-center"
         >
-          <div className="h-7 px-2 py-0.5 rounded-lg bg-white flex items-center justify-center">
-            <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-6 object-contain" />
+          <div className="h-6 sm:h-7 px-2 py-0.5 rounded-lg bg-white flex items-center justify-center shrink-0">
+            <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-5 sm:h-6 object-contain" />
           </div>
-          <span className="w-2 h-2 rounded-full bg-[#FFD400] animate-pulse" />
-          <span className="text-xs font-bold uppercase tracking-widest text-[#FFD400]">
+          <span className="w-2 h-2 rounded-full bg-[#FFD400] animate-pulse shrink-0" />
+          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#FFD400]">
             Organized by {HACKATHON_DETAILS.department}
           </span>
-          <span className="text-xs text-gray-500">|</span>
-          <span className="text-xs font-medium text-gray-300">{HACKATHON_DETAILS.collegeName}</span>
+          <span className="text-xs text-gray-500 hidden sm:inline">|</span>
+          <span className="text-[11px] sm:text-xs font-medium text-gray-300 w-full sm:w-auto">{HACKATHON_DETAILS.collegeName}</span>
         </motion.div>
 
         {/* Official COREXATHON Logo Emblem */}
@@ -80,7 +80,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
             <img
               src="/corexathon-logo.png"
               alt="COREXATHON '26 Official Logo"
-              className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover border-2 border-[#FFD400] shadow-2xl shadow-[#FFD400]/40 group-hover:scale-105 transition-transform duration-300"
+              className="relative w-28 h-28 xs:w-36 xs:h-36 sm:w-44 sm:h-44 rounded-full object-cover border-2 border-[#FFD400] shadow-2xl shadow-[#FFD400]/40 group-hover:scale-105 transition-transform duration-300"
             />
           </div>
         </motion.div>
@@ -90,10 +90,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-heading font-black text-5xl sm:text-7xl lg:text-8xl tracking-tight text-white uppercase leading-[1.05]"
+          className="font-heading font-black text-4xl xs:text-5xl sm:text-7xl lg:text-8xl tracking-tight text-white uppercase leading-[1.05]"
         >
           CORE<span className="text-[#FFD400] drop-shadow-[0_0_35px_rgba(255,212,0,0.6)]">X</span>ATHON
-          <span className="block text-3xl sm:text-5xl lg:text-6xl text-gray-400 font-extrabold mt-2 tracking-normal">
+          <span className="block text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gray-400 font-extrabold mt-1 sm:mt-2 tracking-normal">
             '26
           </span>
         </motion.h1>
@@ -102,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 max-w-3xl mx-auto text-lg sm:text-2xl text-gray-300 font-light tracking-wide"
+          className="mt-4 sm:mt-6 max-w-3xl mx-auto text-base sm:text-2xl text-gray-300 font-light tracking-wide px-2"
         >
           {HACKATHON_DETAILS.tagline}
         </motion.p>
@@ -112,14 +112,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm font-medium text-gray-300"
+          className="mt-6 sm:mt-8 flex flex-col xs:flex-row items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm font-medium text-gray-300"
         >
-          <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#111116] border border-white/10">
-            <Calendar className="w-4 h-4 text-[#FFD400]" />
+          <div className="w-full xs:w-auto flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#111116] border border-white/10">
+            <Calendar className="w-4 h-4 text-[#FFD400] shrink-0" />
             <span>{HACKATHON_DETAILS.dates}</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#111116] border border-white/10">
-            <MapPin className="w-4 h-4 text-[#FFD400]" />
+          <div className="w-full xs:w-auto flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#111116] border border-white/10">
+            <MapPin className="w-4 h-4 text-[#FFD400] shrink-0" />
             <span>{HACKATHON_DETAILS.venue}</span>
           </div>
         </motion.div>
@@ -129,26 +129,26 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-10 max-w-2xl mx-auto p-6 rounded-2xl bg-[#0F0F14]/90 border border-white/10 backdrop-blur-xl shadow-2xl relative group hover:border-[#FFD400]/40 transition-colors"
+          className="mt-8 sm:mt-10 max-w-2xl mx-auto p-4 sm:p-6 rounded-2xl bg-[#0F0F14]/90 border border-white/10 backdrop-blur-xl shadow-2xl relative group hover:border-[#FFD400]/40 transition-colors"
         >
-          <div className="text-xs font-mono text-[#FFD400] uppercase tracking-widest mb-4 flex items-center justify-center gap-2">
+          <div className="text-[10px] sm:text-xs font-mono text-[#FFD400] uppercase tracking-widest mb-3 sm:mb-4 flex items-center justify-center gap-2">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Hackathon Begins In</span>
             <Sparkles className="w-3.5 h-3.5" />
           </div>
 
-          <div className="grid grid-cols-4 gap-3 sm:gap-6">
+          <div className="grid grid-cols-4 gap-2 xs:gap-3 sm:gap-6">
             {[
               { label: 'DAYS', value: timeLeft.days },
               { label: 'HOURS', value: timeLeft.hours },
               { label: 'MINUTES', value: timeLeft.minutes },
               { label: 'SECONDS', value: timeLeft.seconds },
             ].map((unit, idx) => (
-              <div key={idx} className="bg-black/60 rounded-xl p-3 sm:p-4 border border-white/5 text-center">
-                <span className="font-heading font-black text-3xl sm:text-5xl text-white tracking-wider block">
+              <div key={idx} className="bg-black/60 rounded-xl p-2 xs:p-3 sm:p-4 border border-white/5 text-center">
+                <span className="font-heading font-black text-2xl xs:text-3xl sm:text-5xl text-white tracking-wider block">
                   {String(unit.value).padStart(2, '0')}
                 </span>
-                <span className="text-[10px] sm:text-xs font-mono text-gray-400 mt-1 block">
+                <span className="text-[9px] xs:text-[10px] sm:text-xs font-mono text-gray-400 mt-1 block">
                   {unit.label}
                 </span>
               </div>
@@ -161,11 +161,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <button
             onClick={onOpenRegister}
-            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#FFD400] text-black font-extrabold text-sm uppercase tracking-wider shadow-[0_0_30px_rgba(255,212,0,0.4)] hover:bg-[#FFE033] hover:shadow-[0_0_45px_rgba(255,212,0,0.6)] active:scale-95 transition-all flex items-center justify-center gap-2 group"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#FFD400] text-black font-extrabold text-sm uppercase tracking-wider shadow-[0_0_30px_rgba(255,212,0,0.4)] hover:bg-[#FFE033] hover:shadow-[0_0_45px_rgba(255,212,0,0.6)] active:scale-95 transition-all flex items-center justify-center gap-2 group min-h-[48px]"
           >
             <span>Register Team Now</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

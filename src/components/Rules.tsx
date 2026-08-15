@@ -20,23 +20,23 @@ export const Rules: React.FC = () => {
   };
 
   return (
-    <section id="rules" className="py-24 bg-[#070709] relative border-t border-white/5">
+    <section id="rules" className="py-16 sm:py-24 bg-[#070709] relative border-t border-white/5">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
           <span className="text-xs font-mono text-[#FFD400] uppercase tracking-widest px-3 py-1 rounded-full bg-[#FFD400]/10 border border-[#FFD400]/20">
             Transparency & Conduct
           </span>
-          <h2 className="font-heading font-black text-4xl sm:text-5xl text-white uppercase tracking-tight mt-4">
+          <h2 className="font-heading font-black text-3xl sm:text-5xl text-white uppercase tracking-tight mt-4">
             Rules & <span className="text-[#FFD400]">Guidelines</span>
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-gray-400">
+          <p className="mt-4 text-sm sm:text-lg text-gray-400">
             Clear guidelines ensure a fair, inclusive, and high-integrity competitive environment for all Coders.
           </p>
         </div>
 
         {/* Accordion List */}
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {RULES.map((ruleCat, idx) => {
             const isOpen = openCategoryIndex === idx;
 
@@ -51,20 +51,20 @@ export const Rules: React.FC = () => {
                 {/* Category Header Bar */}
                 <button
                   onClick={() => toggleCategory(idx)}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4"
+                  className="w-full p-4 sm:p-6 text-left flex items-center justify-between gap-3 sm:gap-4 min-h-[44px]"
                 >
-                  <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-white/5 border border-white/10">
+                  <div className="flex items-center gap-3 min-w-0">
+                    <div className="p-2 sm:p-2.5 rounded-xl bg-white/5 border border-white/10 shrink-0">
                       {getCategoryIcon(idx)}
                     </div>
-                    <h3 className="font-heading font-bold text-xl text-white">
+                    <h3 className="font-heading font-bold text-base sm:text-xl text-white truncate">
                       {ruleCat.category}
                     </h3>
                   </div>
 
-                  <div className="p-2 rounded-full bg-white/5 text-gray-400 group-hover:text-white transition-transform">
+                  <div className="p-1.5 sm:p-2 rounded-full bg-white/5 text-gray-400 group-hover:text-white transition-transform shrink-0">
                     <ChevronDown
-                      className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#FFD400]' : ''
+                      className={`w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#FFD400]' : ''
                         }`}
                     />
                   </div>
@@ -78,14 +78,14 @@ export const Rules: React.FC = () => {
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="px-6 pb-6 pt-2 border-t border-white/5 space-y-4"
+                      className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 border-t border-white/5 space-y-3 sm:space-y-4"
                     >
                       {ruleCat.items.map((item, itemIdx) => (
                         <div
                           key={itemIdx}
-                          className="p-4 rounded-xl bg-black/60 border border-white/5"
+                          className="p-3.5 sm:p-4 rounded-xl bg-black/60 border border-white/5"
                         >
-                          <h4 className="font-heading font-bold text-sm text-[#FFD400] mb-1">
+                          <h4 className="font-heading font-bold text-xs sm:text-sm text-[#FFD400] mb-1">
                             {item.title}
                           </h4>
                           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
