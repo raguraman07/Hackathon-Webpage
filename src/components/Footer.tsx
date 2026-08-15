@@ -1,5 +1,5 @@
 import React from 'react';
-import { Terminal, ArrowUp, Heart } from 'lucide-react';
+import { ArrowUp, Heart } from 'lucide-react';
 import { HACKATHON_DETAILS } from '../data/hackathonData';
 
 export const Footer: React.FC = () => {
@@ -36,9 +36,7 @@ export const Footer: React.FC = () => {
             <a href="#prizes" className="hover:text-[#FFD400] transition-colors">Prizes</a>
             <a href="#schedule" className="hover:text-[#FFD400] transition-colors">Schedule</a>
             <a href="#rules" className="hover:text-[#FFD400] transition-colors">Rules</a>
-            <a href="#chief-guest" className="hover:text-[#FFD400] transition-colors">Chief Guest</a>
             <a href="#faq" className="hover:text-[#FFD400] transition-colors">FAQ</a>
-            <a href="#campus-map" className="hover:text-[#FFD400] transition-colors">Campus Roadmap</a>
             <a href="#contact" className="hover:text-[#FFD400] transition-colors">Venue</a>
           </div>
 

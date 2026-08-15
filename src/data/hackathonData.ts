@@ -40,27 +40,6 @@ export interface JudgingCriterion {
   checklist: string[];
 }
 
-export interface Person {
-  id: string;
-  name: string;
-  role: string;
-  organization: string;
-  image: string;
-  bio: string;
-  linkedin?: string;
-  twitter?: string;
-  github?: string;
-}
-
-export interface Sponsor {
-  id: string;
-  name: string;
-  tier: 'Title' | 'Platinum' | 'Gold' | 'Tech Partner' | 'Community';
-  logoText: string;
-  website: string;
-  description: string;
-}
-
 export interface FAQItem {
   id: string;
   question: string;
@@ -72,16 +51,16 @@ export const HACKATHON_DETAILS = {
   name: "COREXATHON '26",
   fullTitle: "Department of Computer Science & Engineering 24-Hour Hackathon",
   tagline: "Ignite Innovation. Conquer Code. Shape the Future.",
-  dates: "August 28 - 29, 2026",
+  dates: "September 2 - 3, 2026",
   duration: "24 Hours Non-Stop",
-  targetDate: "2026-08-28T10:00:00+05:30",
-  venue: "SNS DT Play House",
-  address: "SNS Kalvi Nagar, Sathy Main Road, Kurumbapalayam, Coimbatore, Tamil Nadu 641107",
-  prizePool: "₹5,00,000+",
+  targetDate: "2026-09-02T10:00:00+05:30",
+  venue: "SNS Tech Campus Cloud Lab",
+  address: "SNS Tech Campus, Sathy Main Road, Kurumbapalayam, Coimbatore, Tamil Nadu 641107",
+  prizePool: "🏆 Attractive Cash Prizes for Winners! 🎁",
   minTeamSize: 2,
   maxTeamSize: 4,
-  contactEmail: "corexathon@snsce.ac.in",
-  contactPhone: "+91 98765 43210",
+  contactEmail: "corexathon@gmail.com",
+  contactPhone: "+91 8838081160",
   collegeName: "SNS College of Engineering",
   department: "Department of Computer Science & Engineering",
   departmentShort: "Department of CSE",
@@ -93,41 +72,40 @@ export const HACKATHON_DETAILS = {
 export const TIMELINE: TimelineEvent[] = [
   {
     step: 1,
-    date: "August 1, 2026",
-    time: "10:00 AM",
+    date: "August 14, 2026",
+    time: "6:00 PM",
     title: "Registrations Open",
     description: "Online team registration opens across India. Form your 2-4 member team and submit your registration details.",
     status: "completed"
   },
   {
     step: 2,
-    date: "August 25, 2026",
+    date: "August 29, 2026",
     time: "11:59 PM",
     title: "Registrations Close",
     description: "Deadline to register teams via official Google Form.",
     status: "current",
     highlight: true
   },
-
   {
     step: 3,
-    date: "August 28, 2026",
+    date: "September 2, 2026",
     time: "09:00 AM",
     title: "Check-in & Welcome Breakfast",
-    description: "Participants arrive at SNS DT Play House, collect badge kits, and settle into hack stations.",
+    description: "Participants arrive at SNS Tech Campus Cloud Lab, collect badge kits, and settle into hack stations.",
     status: "upcoming"
   },
   {
     step: 4,
-    date: "August 28, 2026",
+    date: "September 2, 2026",
     time: "09:30 AM",
     title: "Inauguration & Problem Statement Release",
-    description: "Keynotes by Chief Guests, sponsor briefing, and official problem statements unveiled offline at the venue.",
+    description: "Welcome address, hackathon rules briefing, and official problem statements unveiled offline at the venue.",
     status: "upcoming"
   },
   {
     step: 5,
-    date: "August 28, 2026",
+    date: "September 2, 2026",
     time: "10:00 AM",
     title: "24-Hour Coding Sprint Begins!",
     description: "Timer starts! Teams begin coding, building, and prototyping uninterrupted.",
@@ -136,7 +114,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 6,
-    date: "August 28, 2026",
+    date: "September 2, 2026",
     time: "03:00 PM",
     title: "Mentorship Round 1",
     description: "Industry mentors review team architecture, data pipelines, and offer feedback.",
@@ -144,7 +122,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 7,
-    date: "August 28, 2026",
+    date: "September 2, 2026",
     time: "11:00 PM",
     title: "Midnight Coding",
     description: "Energy drinks, snacks, music session,and overnight coding acceleration.",
@@ -152,7 +130,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 8,
-    date: "August 29, 2026",
+    date: "September 3, 2026",
     time: "08:00 AM",
     title: "Mentorship Round 2 (Code Review)",
     description: "Technical mentors conduct deep code review and UI sanity checks.",
@@ -160,7 +138,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 9,
-    date: "August 29, 2026",
+    date: "September 3, 2026",
     time: "10:00 AM",
     title: "Sprint End & GitHub Freeze",
     description: "Codinging officially stops. Code repository URLs Should be submitted in the portal.",
@@ -168,7 +146,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 10,
-    date: "August 29, 2026",
+    date: "September 3, 2026",
     time: "10:30 AM",
     title: "Grand Jury Evaluation & Demos",
     description: "Shortlisted teams pitch live in front of the judge panel at SNS Central Auditorium.",
@@ -176,7 +154,7 @@ export const TIMELINE: TimelineEvent[] = [
   },
   {
     step: 11,
-    date: "August 29, 2026",
+    date: "September 3, 2026",
     time: "01:00 PM",
     title: "Prize Ceremony & Closing Valedictory",
     description: "Announcement of Grand Winner, Runner-ups, and Trophy distribution.",
@@ -189,41 +167,41 @@ export const PRIZES: Prize[] = [
   {
     title: "Grand Champion",
     rank: "1st Place Overall",
-    amount: "₹2,50,000",
+    amount: "Attractive Cash Prize",
     badge: "Overall Winner",
     color: "#FFD400",
     highlight: true,
     perks: [
       "Official COREXATHON Champion Trophy",
-      "Direct Entry to SNS iHub Incubation with ₹10L Seed Grant Support",
+      "Direct Entry to SNS iHub Incubation & Seed Support",
       "Direct Interview Calls with Title Sponsor Tech Team",
-      "₹1,00,000 Cloud Credits (AWS/GCP)",
+      "Premium Cloud Credits (AWS/GCP)",
       "Swag Kit & Lifetime Alumni Badge"
     ]
   },
   {
     title: "First Runner-Up",
     rank: "2nd Place Overall",
-    amount: "₹1,50,000",
+    amount: "Attractive Cash Prize",
     badge: "Runner Up",
     color: "#E2E8F0",
     perks: [
       "First Runner-Up Trophy & Medals",
       "Fast-track Internship Interviews",
-      "₹50,000 Cloud Credits",
+      "Cloud Credits & Dev Tools",
       "Premium Swag Box & Mentorship Vouchers"
     ]
   },
   {
     title: "Second Runner-Up",
     rank: "3rd Place Overall",
-    amount: "₹1,00,000",
+    amount: "Attractive Cash Prize",
     badge: "2nd Runner Up",
     color: "#CD7F32",
     perks: [
       "Second Runner-Up Trophy & Medals",
       "Internship Opportunity Review",
-      "₹25,000 Cloud Credits",
+      "Cloud Credits & Perks",
       "Special Tech Gadget Hampers"
     ]
   }
@@ -235,7 +213,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day1",
     time: "08:30 AM - 09:15 AM",
     title: "Participant Check-In & Breakfast",
-    location: "SNS DT Play House Lobby",
+    location: "SNS Tech Campus Cloud Lab Lobby",
     description: "Welcome kit distribution, badge scanning, and energetic breakfast."
   },
   {
@@ -243,7 +221,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day1",
     time: "09:15 AM - 10:00 AM",
     title: "Grand Inauguration & Keynote",
-    location: "SNS DT Play House",
+    location: "SNS Tech Campus Cloud Lab",
     description: "Welcome address, Chief Guest keynote, and hackathon rules brief."
   },
   {
@@ -260,7 +238,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day1",
     time: "01:00 PM - 02:00 PM",
     title: "Power Lunch",
-    location: "SNS DT Play House Lobby",
+    location: "SNS Tech Campus Cloud Lab Lobby",
     description: "Buffet lunch for all registered teams and mentors."
   },
   {
@@ -276,7 +254,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day1",
     time: "05:30 PM - 06:00 PM",
     title: "High Tea & Networking Snack",
-    location: "SNS DT Play House Lobby",
+    location: "SNS Tech Campus Cloud Lab Lobby",
     description: "Coffee, tea, snacks, and casual sponsor interaction."
   },
   {
@@ -284,7 +262,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day1",
     time: "08:30 PM - 09:30 PM",
     title: "Buffet Dinner",
-    location: "SNS DT Play House Lobby",
+    location: "SNS Tech Campus Cloud Lab Lobby",
     description: "Nutritious dinner to fuel the overnight hack."
   },
   {
@@ -292,7 +270,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day1",
     time: "11:00 PM - 12:30 AM",
     title: "Midnight Refreshment Station",
-    location: "SNS DT Play House",
+    location: "SNS Tech Campus Cloud Lab",
     description: "Music,energy drinks,and mini quiz."
   },
   {
@@ -300,7 +278,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day2",
     time: "01:00 AM - 04:00 AM",
     title: "Overnight Coding Accelerator",
-    location: "SNS DT Play House",
+    location: "SNS Tech Campus Cloud Lab",
     description: "Deep focus hour. Technical support desk remains active."
   },
   {
@@ -308,7 +286,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day2",
     time: "04:00 AM - 05:30 AM",
     title: "Mentorship Session 2: Code & Feature Freeze Check",
-    location: "SNS DT Play House",
+    location: "SNS Tech Campus Cloud Lab",
     description: "Mentors inspect core feature completeness and UX readiness."
   },
   {
@@ -316,7 +294,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day2",
     time: "08:30 AM - 09:30 AM",
     title: "Fresh Breakfast & Coffee Refresh",
-    location: "SNS DT Play House Lobby",
+    location: "SNS Tech Campus Cloud Lab Lobby",
     description: "Morning breakfast to energize teams for final pitch preparation."
   },
   {
@@ -333,7 +311,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day2",
     time: "10:00 AM - 11:30 AM",
     title: "Jury Pitching & Demo Rounds",
-    location: "Presentation At Play House",
+    location: "Presentation At Cloud Lab",
     description: "Shortlisted teams present 5-minute live demo + 3-minute Q&A to judge panel."
   },
   {
@@ -341,7 +319,7 @@ export const SCHEDULE: ScheduleItem[] = [
     day: "day2",
     time: "12:00 PM - 01:30 PM",
     title: "Grand Award Ceremony & Valedictory",
-    location: "SNS DT Play House",
+    location: "SNS Tech Campus Cloud Lab",
     description: "Winner announcements, cash prize handover, trophy distribution, and vote of thanks."
   }
 ];
@@ -352,7 +330,7 @@ export const RULES: RuleCategory[] = [
     items: [
       {
         title: "Student Status",
-        detail: "Open to all current undergraduate students pursuing B.E / B.Tech , Arts & Science from any recognized institution."
+        detail: "Open exclusively to current undergraduate engineering students pursuing B.E / B.Tech from any recognized institution."
       },
       {
         title: "Team Size",
@@ -468,139 +446,17 @@ export const JUDGING_CRITERIA: JudgingCriterion[] = [
   }
 ];
 
-export interface ChiefGuest {
-  name: string;
-  role: string;
-  organization: string;
-  image: string;
-  bio: string;
-  keynoteTitle?: string;
-  linkedin?: string;
-  twitter?: string;
-}
 
-export const CHIEF_GUEST: ChiefGuest = {
-  name: "Dr. Vikram Subramanian",
-  role: "Director of AI Research & Chief Innovation Strategist",
-  organization: "NeuroTech Labs",
-  image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800",
-  bio: "Ex-Google AI research director with 14+ years pioneering deep learning and generative AI architectures. Keynote speaker empowering the next generation of student engineers and founders.",
-  keynoteTitle: "Building Scalable AI for the Next Billion Users",
-  linkedin: "https://linkedin.com",
-  twitter: "https://twitter.com"
-};
-
-export const SPONSORS: Sponsor[] = [
-  {
-    id: "s1",
-    name: "Apex Cloud Systems",
-    tier: "Title",
-    logoText: "APEX CLOUD",
-    website: "https://example.com",
-    description: "Title Sponsor providing ₹1,00,000 Cloud Infrastructure Credits & Direct Hiring."
-  },
-  {
-    id: "s2",
-    name: "Nexus AI Platform",
-    tier: "Platinum",
-    logoText: "NEXUS AI",
-    website: "https://example.com",
-    description: "Platinum Sponsor powering GenAI track API access."
-  },
-  {
-    id: "s3",
-    name: "CyberShield Security",
-    tier: "Platinum",
-    logoText: "CYBERSHIELD",
-    website: "https://example.com",
-    description: "Providing security audit licenses and penetration testing tools."
-  },
-  {
-    id: "s4",
-    name: "Polygon DevNet",
-    tier: "Gold",
-    logoText: "POLYGON",
-    website: "https://example.com",
-    description: "Official Web3 track partner sponsoring gas fees & bounty rewards."
-  },
-  {
-    id: "s5",
-    name: "Devfolio Partner",
-    tier: "Tech Partner",
-    logoText: "DEVFOLIO",
-    website: "https://example.com",
-    description: "Official Hackathon Platform Partner."
-  },
-  {
-    id: "s6",
-    name: "GitHub Education",
-    tier: "Tech Partner",
-    logoText: "GITHUB",
-    website: "https://example.com",
-    description: "Providing Student Developer Packs and copilot access."
-  },
-  {
-    id: "s7",
-    name: "Red Bull Energy",
-    tier: "Community",
-    logoText: "RED BULL",
-    website: "https://example.com",
-    description: "Official Caffeine & Energy Drinks Sponsor for midnight hack."
-  },
-  {
-    id: "s8",
-    name: "SNS iHub Incubation",
-    tier: "Title",
-    logoText: "SNS iHUB",
-    website: "https://snsgroups.com",
-    description: "Incubation & Seed Grant Partner."
-  }
-];
-
-export const ORGANIZERS: Person[] = [
-  {
-    id: "o1",
-    name: "Dr. R. Radhakrishnan",
-    role: "Chief Patron & Principal",
-    organization: "SNS College of Engineering",
-    image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400",
-    bio: "Championing technical excellence and experiential learning across SNS College of Engineering."
-  },
-  {
-    id: "o2",
-    name: "Prof. K. Venkatesh",
-    role: "Convener & Head of CSE",
-    organization: "SNS College of Engineering",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400",
-    bio: "Overall faculty coordinator overseeing track selection, jury onboarding, and logistics."
-  },
-  {
-    id: "o3",
-    name: "Aakash V.",
-    role: "Student President & Lead Organizer",
-    organization: "COREXATHON Student Cell",
-    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=400",
-    bio: "Final year CSE student leading team management, registrations, and sponsorship outreach."
-  },
-  {
-    id: "o4",
-    name: "Meera Krishnan",
-    role: "Technical Lead & Developer",
-    organization: "COREXATHON Student Cell",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400",
-    bio: "3rd year AI & DS student managing track problem statements and judging portal integration."
-  }
-];
 
 export const FAQS: FAQItem[] = [
   {
     id: "faq1",
     question: "Who is eligible to participate in COREXATHON '26?",
-    answer: "Open to All Engineering and Arts & Science student innovators across recognized institutions in India.",
+    answer: "Open exclusively to undergraduate B.E / B.Tech engineering student innovators across recognized institutions in India.",
     points: [
-      "Open to B.E / B.Tech students.",
-      "Open to Arts and Science students.",
-      "Students from any recognized Engineering College or Arts and Science College or university across India can apply."
+      "Exclusively open to current B.E / B.Tech undergraduate engineering students.",
+      "Students from any recognized Engineering College or Institute across India can apply.",
+      "Valid institutional Engineering College ID card is required during physical check-in."
     ]
   },
   {
@@ -628,7 +484,7 @@ export const FAQS: FAQItem[] = [
     question: "Can I participate virtually or is in-person attendance mandatory?",
     answer: "COREXATHON '26 is an in-person, on-campus hackathon.",
     points: [
-      "In-person physical attendance is required at SNS DT Play House, Coimbatore.",
+      "In-person physical attendance is required at SNS Tech Campus Cloud Lab, Coimbatore.",
       "Physical presence is mandatory for live demo judging and award distribution.",
       "No remote or virtual participation options are available."
     ]

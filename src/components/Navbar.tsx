@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Terminal, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight } from 'lucide-react';
 import { HACKATHON_DETAILS } from '../data/hackathonData';
 
 interface NavbarProps {
@@ -36,9 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
     { name: 'Prizes', href: '#prizes' },
     { name: 'Schedule', href: '#schedule' },
     { name: 'Rules', href: '#rules' },
-    { name: 'Chief Guest', href: '#chief-guest' },
     { name: 'FAQ', href: '#faq' },
-    { name: 'Campus Roadmap', href: '#campus-map' },
     { name: 'Venue', href: '#contact' },
   ];
 

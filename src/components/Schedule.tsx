@@ -35,7 +35,7 @@ export const Schedule: React.FC = () => {
                   : 'text-gray-400 hover:text-white'
               }`}
             >
-              Day 1 — Aug 28, 2026
+              Day 1 — Sep 2, 2026
             </button>
             <button
               onClick={() => setActiveDay('day2')}
@@ -45,7 +45,7 @@ export const Schedule: React.FC = () => {
                   : 'text-gray-400 hover:text-white'
               }`}
             >
-              Day 2 — Aug 29, 2026
+              Day 2 — Sep 3, 2026
             </button>
           </div>
         </div>
