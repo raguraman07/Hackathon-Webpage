@@ -13,11 +13,16 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-white/5">
           {/* Logo & Tagline */}
           <div className="flex items-center gap-4">
+            <img 
+              src="/corexathon-logo.png" 
+              alt="COREXATHON '26 Logo" 
+              className="w-14 h-14 rounded-full object-cover border border-[#FFD400]/40 shadow-lg shadow-[#FFD400]/20" 
+            />
             <div className="h-12 px-3 py-1 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-white/10">
-              <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-10 object-contain" />
+              <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-9 object-contain" />
             </div>
             <div>
-              <span className="font-heading font-black text-2xl text-white tracking-wider">
+              <span className="font-heading font-black text-2xl text-white tracking-wider block">
                 CORE<span className="text-[#FFD400]">X</span>ATHON '26
               </span>
               <p className="text-xs text-[#FFD400] font-mono">

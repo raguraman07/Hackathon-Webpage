@@ -51,8 +51,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo Branding */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="h-10 px-2.5 py-1 rounded-xl bg-white flex items-center justify-center shadow-lg shadow-white/10 group-hover:scale-105 transition-transform">
-              <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-8 object-contain" />
+            <img 
+              src="/corexathon-logo.png" 
+              alt="COREXATHON '26 Logo" 
+              className="w-11 h-11 rounded-full object-cover border border-[#FFD400]/50 group-hover:scale-105 transition-transform shadow-md shadow-[#FFD400]/20" 
+            />
+            <div className="h-10 px-2 py-1 rounded-xl bg-white hidden sm:flex items-center justify-center shadow-lg shadow-white/10 group-hover:scale-105 transition-transform">
+              <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-7 object-contain" />
             </div>
             <div className="h-7 w-[1px] bg-white/20 hidden sm:block" />
             <div>

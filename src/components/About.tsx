@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Zap, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 export const About: React.FC = () => {
   return (
@@ -33,10 +33,12 @@ export const About: React.FC = () => {
             className="space-y-6"
           >
             <div className="p-8 rounded-2xl bg-[#0F0F14] border border-white/10 relative overflow-hidden group hover:border-[#FFD400]/40 transition-colors">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-2.5 rounded-xl bg-[#FFD400]/10 text-[#FFD400]">
-                  <Zap className="w-6 h-6" />
-                </div>
+              <div className="flex items-center gap-4 mb-4">
+                <img 
+                  src="/corexathon-logo.png" 
+                  alt="COREXATHON Logo" 
+                  className="w-12 h-12 rounded-full object-cover border border-[#FFD400]/40 shadow-md shadow-[#FFD400]/20 shrink-0" 
+                />
                 <h3 className="font-heading font-bold text-2xl text-white">The COREXATHON Vision</h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base">

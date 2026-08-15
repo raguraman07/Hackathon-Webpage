@@ -68,6 +68,23 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           <span className="text-xs font-medium text-gray-300">{HACKATHON_DETAILS.collegeName}</span>
         </motion.div>
 
+        {/* Official COREXATHON Logo Emblem */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center mb-6"
+        >
+          <div className="relative group cursor-pointer">
+            <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-[#FFD400] via-[#FF8800] to-[#FFD400] blur-md opacity-80 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
+            <img
+              src="/corexathon-logo.png"
+              alt="COREXATHON '26 Official Logo"
+              className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover border-2 border-[#FFD400] shadow-2xl shadow-[#FFD400]/40 group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </motion.div>
+
         {/* Main Title & Tagline */}
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
