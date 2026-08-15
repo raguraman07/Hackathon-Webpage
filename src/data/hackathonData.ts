@@ -65,14 +65,14 @@ export const HACKATHON_DETAILS = {
   department: "Department of Computer Science & Engineering",
   departmentShort: "Department of CSE",
   accreditation: "Autonomous Institution | NAAC 'A' Grade | NBA Accredited",
-  registrationUrl: "https://forms.gle/V6NBDhAanEAs3x5DA",
+  registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfKwirKNQyOwT2_saMBKmDcR_OsQGa0PCdOalWgBpNKfuOb3A/viewform?usp=dialog",
   googleMapsUrl: "https://maps.app.goo.gl/mLV9ieNTtxh6WZJt5",
 };
 
 export const TIMELINE: TimelineEvent[] = [
   {
     step: 1,
-    date: "August 14, 2026",
+    date: "August 15, 2026",
     time: "6:00 PM",
     title: "Registrations Open",
     description: "Online team registration opens across India. Form your 2-4 member team and submit your registration details.",
@@ -91,8 +91,8 @@ export const TIMELINE: TimelineEvent[] = [
     step: 3,
     date: "September 2, 2026",
     time: "09:00 AM",
-    title: "Check-in & Welcome Breakfast",
-    description: "Participants arrive at SNS Tech Campus Cloud Lab, collect badge kits, and settle into hack stations.",
+    title: "Check-in & Environment Setup",
+    description: "Participants arrive at SNS Tech Campus Cloud Lab, collect badge kits, configure environments, and settle into hack stations.",
     status: "upcoming"
   },
   {
@@ -124,8 +124,8 @@ export const TIMELINE: TimelineEvent[] = [
     step: 7,
     date: "September 2, 2026",
     time: "11:00 PM",
-    title: "Midnight Coding",
-    description: "Energy drinks, snacks, music session,and overnight coding acceleration.",
+    title: "Midnight Tech & Debugging Session",
+    description: "Technical helpdesk support, live code reviews, and overnight coding acceleration.",
     status: "upcoming"
   },
   {
@@ -212,9 +212,9 @@ export const SCHEDULE: ScheduleItem[] = [
     id: "s1",
     day: "day1",
     time: "08:30 AM - 09:15 AM",
-    title: "Participant Check-In & Breakfast",
+    title: "Participant Check-In & Setup",
     location: "SNS Tech Campus Cloud Lab Lobby",
-    description: "Welcome kit distribution, badge scanning, and energetic breakfast."
+    description: "Welcome kit distribution, badge scanning, network configuration, and dev setup."
   },
   {
     id: "s2",
@@ -237,9 +237,9 @@ export const SCHEDULE: ScheduleItem[] = [
     id: "s4",
     day: "day1",
     time: "01:00 PM - 02:00 PM",
-    title: "Power Lunch",
-    location: "SNS Tech Campus Cloud Lab Lobby",
-    description: "Buffet lunch for all registered teams and mentors."
+    title: "Tech Briefing & Cloud Infrastructure Sync",
+    location: "SNS Tech Campus Cloud Lab",
+    description: "Technical briefing on cloud resources, APIs, database setup, and deployment pipelines."
   },
   {
     id: "s5",
@@ -253,25 +253,25 @@ export const SCHEDULE: ScheduleItem[] = [
     id: "s6",
     day: "day1",
     time: "05:30 PM - 06:00 PM",
-    title: "High Tea & Networking Snack",
+    title: "Tech Showcase & Sponsor Connect",
     location: "SNS Tech Campus Cloud Lab Lobby",
-    description: "Coffee, tea, snacks, and casual sponsor interaction."
+    description: "Sponsor tech stack demonstrations, API walkthroughs, and developer networking."
   },
   {
     id: "s7",
     day: "day1",
     time: "08:30 PM - 09:30 PM",
-    title: "Buffet Dinner",
-    location: "SNS Tech Campus Cloud Lab Lobby",
-    description: "Nutritious dinner to fuel the overnight hack."
+    title: "Mid-Sprint Architecture & Code Sync",
+    location: "SNS Tech Campus Cloud Lab",
+    description: "System architecture sanity check, git repository sync, and peer technical discussions."
   },
   {
     id: "s8",
     day: "day1",
     time: "11:00 PM - 12:30 AM",
-    title: "Midnight Refreshment Station",
+    title: "Midnight Debug & Rapid Troubleshooting",
     location: "SNS Tech Campus Cloud Lab",
-    description: "Music,energy drinks,and mini quiz."
+    description: "Dedicated technical helpdesk support, live issue troubleshooting, and code optimization."
   },
   {
     id: "s9",
@@ -293,9 +293,9 @@ export const SCHEDULE: ScheduleItem[] = [
     id: "s11",
     day: "day2",
     time: "08:30 AM - 09:30 AM",
-    title: "Fresh Breakfast & Coffee Refresh",
+    title: "Pitch Deck & Live Demo System Prep",
     location: "SNS Tech Campus Cloud Lab Lobby",
-    description: "Morning breakfast to energize teams for final pitch preparation."
+    description: "Final slide deck preparation, live video output checks, and staging environment verification."
   },
   {
     id: "s12",
@@ -465,7 +465,7 @@ export const FAQS: FAQItem[] = [
     answer: "Yes, registration fee details below:",
     points: [
       "Registration fee is ₹500 per Person.",
-      "Complimentary meals, high-speed Wi-Fi & caffeine stations included.",
+      "High-speed optical fiber Wi-Fi & dedicated cloud developer resources included.",
       "Free overnight stay facilities provided on SNS campus."
     ]
   },
@@ -503,11 +503,11 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq6",
     question: "What support will be provided during the 24 hours?",
-    answer: "Full campus hospitality and technical support throughout the event.",
+    answer: "Full technical support and infrastructure throughout the event.",
     points: [
       "High-speed optical fiber Wi-Fi & dedicated power sockets.",
       "24/7 technical mentors & domain experts for guidance.",
-      "Coffee, snacks & food court meals.",
+      "24/7 high-speed connectivity & dedicated power stations.",
       "24/7 campus security & medical first-aid support."
     ]
   }

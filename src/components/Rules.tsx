@@ -31,7 +31,7 @@ export const Rules: React.FC = () => {
             Rules & <span className="text-[#FFD400]">Guidelines</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-400">
-            Clear guidelines ensure a fair, inclusive, and high-integrity competitive environment for all hackers.
+            Clear guidelines ensure a fair, inclusive, and high-integrity competitive environment for all Coders.
           </p>
         </div>
 
@@ -43,11 +43,10 @@ export const Rules: React.FC = () => {
             return (
               <div
                 key={idx}
-                className={`rounded-2xl border transition-all ${
-                  isOpen
+                className={`rounded-2xl border transition-all ${isOpen
                     ? 'bg-[#0F0F16] border-[#FFD400]/50 shadow-lg shadow-[#FFD400]/5'
                     : 'bg-[#0F0F14] border-white/10 hover:border-white/20'
-                }`}
+                  }`}
               >
                 {/* Category Header Bar */}
                 <button
@@ -65,9 +64,8 @@ export const Rules: React.FC = () => {
 
                   <div className="p-2 rounded-full bg-white/5 text-gray-400 group-hover:text-white transition-transform">
                     <ChevronDown
-                      className={`w-5 h-5 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180 text-[#FFD400]' : ''
-                      }`}
+                      className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#FFD400]' : ''
+                        }`}
                     />
                   </div>
                 </button>

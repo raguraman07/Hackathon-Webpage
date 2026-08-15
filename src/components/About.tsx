@@ -75,7 +75,7 @@ export const About: React.FC = () => {
               "Expert Mentorship and Guidance from Industry Professionals",
               "Opportunity to Showcase Ideas and Get Incubation Support",
               "Fair and Transparent Evaluation by Experienced Jury Members",
-              "24 - Hour Hackathon Experience with Food, Refreshments, and Fun Activities",
+              "24 - Hour Non-Stop Hacking Experience with Technical Mentorship & Code Reviews",
               "Collaborate with Students from Different Colleges and Backgrounds",
               "Build Real-World Solutions and Gain Hands-On Experience",
               "Exciting Challenges, Team Collaboration, and Continuous Learning",
