@@ -32,13 +32,8 @@ export const ContactVenue: React.FC = () => {
         setFormSubmitted(false);
       }, 5000);
     } else {
-      // Fallback: If EmailJS credentials are default placeholders, still show friendly success for demo but log warning
       console.warn('EmailJS transmission note:', result.message);
-      setFormSubmitted(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => {
-        setFormSubmitted(false);
-      }, 5000);
+      setErrorMessage(result.message || 'Failed to send message. Please try again.');
     }
   };
 
@@ -170,6 +165,12 @@ export const ContactVenue: React.FC = () => {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {errorMessage && (
+                  <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs flex items-center gap-2.5">
+                    <AlertCircle className="w-4 h-4 shrink-0 text-red-400" />
+                    <span>{errorMessage}</span>
+                  </div>
+                )}
                 <div>
                   <label className="text-xs font-mono text-gray-400 block mb-1">YOUR FULL NAME</label>
                   <input
