@@ -14,10 +14,10 @@ export const Footer: React.FC = () => {
           {/* Logo & Tagline */}
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
             <div className="flex items-center gap-3">
-              <img 
-                src="/corexathon-logo.png" 
-                alt="COREXATHON '26 Logo" 
-                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border border-[#FFD400]/40 shadow-lg shadow-[#FFD400]/20 shrink-0" 
+              <img
+                src="/corexathon-logo.png"
+                alt="COREXATHON '26 Logo"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border border-[#FFD400]/40 shadow-lg shadow-[#FFD400]/20 shrink-0"
               />
               <div className="h-10 sm:h-12 px-2.5 sm:px-3 py-1 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-white/10 shrink-0">
                 <img src="/sns-logo.png" alt="SNS Institutions Logo" className="h-7 sm:h-9 object-contain" />
@@ -61,9 +61,9 @@ export const Footer: React.FC = () => {
         <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] sm:text-xs text-gray-500 gap-3 text-center sm:text-left">
           <p>© 2026 {HACKATHON_DETAILS.name}. Conducted by {HACKATHON_DETAILS.department}, {HACKATHON_DETAILS.collegeName}. All Rights Reserved.</p>
           <div className="flex items-center gap-1">
-            <span>Designed & Engineered with</span>
+            <span>Designed & Developed By Raguraman D</span>
             <Heart className="w-3.5 h-3.5 text-[#FFD400] fill-[#FFD400]" />
-            <span>for Student Developers</span>
+
           </div>
         </div>
       </div>
